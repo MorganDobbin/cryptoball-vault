@@ -85,8 +85,8 @@ const EventsList = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-8 h-8 text-primary" />
-              <h2 className="text-3xl font-bold">Active Events</h2>
+            <TrendingUp className="w-8 h-8 text-primary" />
+            <h2 className="text-3xl font-bold">Active Events</h2>
             </div>
             <Button
               onClick={() => setCreateEventModalOpen(true)}
@@ -131,8 +131,8 @@ const EventsList = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-2">
-            <TrendingUp className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl font-bold">Active Events</h2>
+          <TrendingUp className="w-8 h-8 text-primary" />
+          <h2 className="text-3xl font-bold">Active Events</h2>
           </div>
           <Button
             onClick={() => setCreateEventModalOpen(true)}

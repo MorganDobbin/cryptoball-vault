@@ -66,8 +66,8 @@ const PredictionModal = ({ open, onOpenChange, eventTitle, eventId, onSuccess }:
           console.log("Initializing FHEVM for localhost...");
           
           try {
-            const provider = new ethers.BrowserProvider(walletClient as any);
-            const network = await provider.getNetwork();
+          const provider = new ethers.BrowserProvider(walletClient as any);
+          const network = await provider.getNetwork();
             const networkChainId = Number(network.chainId);
             
             console.log("Network chainId:", networkChainId);
@@ -411,13 +411,13 @@ const PredictionModal = ({ open, onOpenChange, eventTitle, eventId, onSuccess }:
 
   // Handle successful submission
   useEffect(() => {
-    if (isConfirmed) {
-      toast.success("Prediction encrypted and submitted successfully!");
-      onOpenChange(false);
-      setPrice("");
+  if (isConfirmed) {
+    toast.success("Prediction encrypted and submitted successfully!");
+    onOpenChange(false);
+    setPrice("");
       // Trigger refresh of event data
       onSuccess?.();
-    }
+  }
   }, [isConfirmed, onOpenChange, onSuccess]);
 
   return (

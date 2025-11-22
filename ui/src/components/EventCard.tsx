@@ -131,12 +131,12 @@ const EventCard = ({
       )}
 
       <div className="flex gap-2">
-        <Button
-          onClick={handlePredict}
+      <Button
+        onClick={handlePredict}
           disabled={status === "ended" && !isFinalized}
           className="flex-1"
-          variant={status === "active" ? "default" : "secondary"}
-        >
+        variant={status === "active" ? "default" : "secondary"}
+      >
           {status === "active" ? "Submit Prediction" : isFinalized ? "View Results" : "Event Ended"}
         </Button>
         {isAdmin && (
@@ -148,7 +148,7 @@ const EventCard = ({
             className="border-primary/50 hover:bg-primary/10 hover:border-primary"
           >
             <Shield className="w-4 h-4 text-primary" />
-          </Button>
+      </Button>
         )}
       </div>
 
